@@ -1,3 +1,9 @@
+/*DEBUGGER*/
+* {
+  outline: 1px solid red;
+}
+
+/***************************************************/
 /********UNIVERSAL STYLES: ACROSS ALL PAGES*********/
 /*Specific styles are labeled by Page Name below*/
 :root {
@@ -18,13 +24,11 @@ html {
 body {
   position: relative;
   display: flex;
-  justify-content: center;
-  width: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: auto;
   height: 100%;
-  margin: auto;
   background: linear-gradient(to bottom, #8945f6, #eb57f7);
-  margin-top: 200px;
-  margin-bottom: 125px;
 }
 
 /*Centers Images*/
@@ -59,6 +63,7 @@ header {
 header {
   display: flex;
   flex-direction: column;
+  flex-basis: 100%;
   justify-content: center;
   gap: 3%;
   height: 25vh;
@@ -92,10 +97,11 @@ h2 {
 }
 
 main {
-
+  flex-basis: 100%;
   height: 100%;
   width: auto;
   padding-top: 10vh;
+
 }
 
 nav {
@@ -154,7 +160,7 @@ nav {
 
 footer {
   display: flex;
-  flex: 1 1 auto;
+  flex-basis: 100%;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -162,7 +168,7 @@ footer {
   width: 100%;
   background-color: #000;
   color: #fff;
-  position: fixed;
+
   bottom: 0;
   margin-top: 5%;
   padding: 0 5%;
@@ -193,11 +199,8 @@ footer a:hover {
   color: #a9a9a9;
 }
 
+/*******************************************************/
 /********PAGE SPECIFIC STYLES: aboutInkBus.html*********/
-
-/*#about-main-container {
-  padding-top: 25%;
-}*/
 
 #about-page-link {
   color: #cc8af8;
@@ -216,9 +219,10 @@ footer a:hover {
   gap: 25px;
   padding: 0 5vw;
   color: #fff;
+  overflow: hidden;
 }
 
-#about-inkbus-section>a {
+#about-inkbus-image {
   flex: 0 0 25%;
 }
 
@@ -245,8 +249,8 @@ footer a:hover {
 }
 
 
-
-/********UNIVERSAL STYLES: MEDIA QUERIES*********/
+/************************************************/
+/********MEDIA QUERIES: UNIVERSAL STYLES*********/
 /*Adjust items for mobile view*/
 @media screen and (max-width: 768px) {
   body {
@@ -273,12 +277,6 @@ footer a:hover {
     padding: 40% 0;
   }
 
-  ul {
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding-bottom: 20px;
-  }
-
   .nav-links {
     gap: 10px;
   }
@@ -302,5 +300,22 @@ footer a:hover {
 
   #footer-right-side {
     align-items: center;
+  }
+}
+
+/***********************************************/
+/*********MEDIA QUERIES: PAGE SPECIFIC**********/
+/*INKBUS About Page*/
+@media screen and (max-width: 980px) {
+
+
+  #about-inkbus-image img {
+    width: 45vw;
+    height: auto;
+  }
+
+  #about-inkbus-image,
+  .about-inkbus-flex-container {
+    flex: 0 0 100%;
   }
 }
