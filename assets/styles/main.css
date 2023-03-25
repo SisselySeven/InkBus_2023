@@ -1,1 +1,306 @@
-/*# sourceMappingURL=main.css.map */
+/********UNIVERSAL STYLES: ACROSS ALL PAGES*********/
+/*Specific styles are labeled by Page Name below*/
+:root {
+  --font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Element Selectors */
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background: linear-gradient(to bottom, #8945f6, #eb57f7);
+  margin-top: 200px;
+  margin-bottom: 125px;
+}
+
+/*Centers Images*/
+img {
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+img:not(#header-title, #header-subtitle) {
+  border: 5px solid #8945f6;
+  border-radius: 14px;
+}
+
+p {
+  font-family: var(--font-family);
+}
+
+a {
+  color: #a9a9a9;
+}
+
+a:hover {
+  color: #8945f6;
+}
+
+header {
+  /*height: calc(5.5em + 9vh);*/
+  width: 100%;
+  flex: 1 0 auto;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3%;
+  height: 25vh;
+  position: fixed;
+  top: 0;
+  background-image: url('https://i.ibb.co/5r2PVGH/INKBUS-Main-header-asset.webp');
+  background-position-x: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*padding: 0 10%;*/
+  box-shadow: 0 7px #cc8af8, 0 14px #8945f6, 0 21px #cc8af8;
+}
+
+h1 {
+  margin: .75% auto 0 auto;
+}
+
+h2 {
+  margin-bottom: 1%;
+}
+
+#header-title {
+  height: 14vh;
+  width: auto;
+}
+
+#header-subtitle {
+  height: 7vh;
+  width: auto;
+}
+
+main {
+
+  height: 100%;
+  width: auto;
+  padding-top: 10vh;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: ". btn1 btn2 .";
+  column-gap: 25px;
+  width: 100%;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 2%;
+  transition: transform .5s ease-in-out;
+}
+
+.nav-buttons:hover {
+  transform: scale(1.1);
+}
+
+#nav-button1 {
+  grid-area: btn1;
+  justify-self: end;
+}
+
+#nav-button2 {
+  grid-area: btn2;
+  justify-self: start;
+}
+
+.nav-link {
+  width: 40vh;
+  height: auto;
+}
+
+#nav-link-item1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*flex: 2 0 calc(33.33% - 20px);*/
+
+}
+
+#nav-link-item2 {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*flex: 2 0 calc(33.33% - 20px);*/
+
+}
+
+footer {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 125px;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  margin-top: 5%;
+  padding: 0 5%;
+  box-shadow: 0 -7px #cc8af8, 0 -14px #8945f6, 0 -21px #cc8af8;
+}
+
+footer>p {
+  color: #a9a9a9;
+}
+
+footer a {
+  color: #eb57f7;
+}
+
+footer a:hover {
+  color: #cc8af8;
+}
+
+#footer-quote {
+  text-align: center;
+  font-weight: 700;
+}
+
+#footer-right-side {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  color: #a9a9a9;
+}
+
+/********PAGE SPECIFIC STYLES: aboutInkBus.html*********/
+
+/*#about-main-container {
+  padding-top: 25%;
+}*/
+
+#about-page-link {
+  color: #cc8af8;
+}
+
+#about-page-link:hover {
+  color: #eb57f7;
+}
+
+#about-inkbus-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 25px;
+  padding: 0 5vw;
+  color: #fff;
+}
+
+#about-inkbus-section>a {
+  flex: 0 0 25%;
+}
+
+.about-inkbus-flex-container {
+  flex: 0 0 70%;
+}
+
+.about-inkbus-flex-container>h3 {
+  flex-basis: 100%;
+  padding-bottom: 10px;
+}
+
+.about-inkbus-p1 {
+  flex-basis: calc(50% - 1em)
+}
+
+.about-inkbus-p2 {
+  flex-basis: calc(50% - 1em)
+}
+
+#about-inkbus-section>a>img {
+  height: auto;
+  width: 45vw;
+}
+
+
+
+/********UNIVERSAL STYLES: MEDIA QUERIES*********/
+/*Adjust items for mobile view*/
+@media screen and (max-width: 768px) {
+  body {
+    display: block
+  }
+
+  header {
+    padding: 3% 0;
+    height: 15vh;
+  }
+
+  h1>img {
+    height: 6vh;
+    width: auto;
+  }
+
+  h2>img {
+    height: 3vh;
+    width: auto;
+  }
+
+  main {
+    height: 100%;
+    padding: 40% 0;
+  }
+
+  ul {
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+  }
+
+  .nav-links {
+    gap: 10px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+  }
+
+  footer p {
+    white-space: nowrap;
+  }
+
+  #footer-quote {
+    padding: 10px 0;
+
+  }
+
+  #footer-right-side {
+    align-items: center;
+  }
+}
