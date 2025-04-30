@@ -1,0 +1,308 @@
+/*DEBUGGER */
+* {
+  outline: 1px solid red;
+}
+
+/***************************************************/
+/********UNIVERSAL STYLES: ACROSS ALL PAGES*********/
+/*Specific styles are labeled by Page Name below*/
+:root {
+  --font-family: lulo-one, Helvetica, sans-serif;
+  --grape: rgb(137, 69, 246);
+  --magenta: rgb(235, 87, 247);
+  --lavender: rgb(204, 138, 248);
+  --aluminum: rgb(169, 169, 169);
+  --white: #fff;
+  --black: #000;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Element Selectors */
+body {
+  width: auto;
+  height: 100%;
+  background: linear-gradient(to bottom, #8945f6, #eb57f7);
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+}
+
+/*Centers Images*/
+img {
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+p {
+  font-family: var(--font-family);
+}
+
+a {
+  color: #a9a9a9;
+}
+
+a:hover {
+  color: #8945f6;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  padding: 15px 6% 15px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  /*specific to index.html and aboutInkBus.html*/
+  background-image: url('https://i.ibb.co/5r2PVGH/INKBUS-Main-header-asset.webp');
+  background-position-x: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 7px #cc8af8, 0 14px #8945f6, 0 21px #cc8af8;
+}
+
+/*Styles associated with <main>*/
+main {
+  display: flex;
+}
+
+.page-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 88%;
+  height: calc(55vh - 10px);
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/*specific to navigation pages*/
+nav {
+  display: flex;
+}
+
+/*shared class of all buttons*/
+.nav-flex-item {
+  border: 5px solid var(--grape);
+  border-radius: 14px;
+  margin: 0 4% 0 4%;
+}
+
+#main-nav-btn1 {
+  height: 40vh;
+  width: auto;
+  transition: transform .5s ease-in-out;
+  border: 5px solid var(--grape);
+  border-radius: 14px;
+  margin-right: 4%;
+}
+
+#main-nav-btn1:hover {
+  transform: scale(1.1);
+}
+
+#main-nav-btn2 {
+  height: 40vh;
+  width: auto;
+  transition: transform .5s ease-in-out;
+  border: 5px solid var(--grape);
+  border-radius: 14px;
+  margin-left: 4%;
+}
+
+#main-nav-btn2:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 125px;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  margin-top: 5%;
+  padding: 0 5%;
+  box-shadow: 0 -7px #cc8af8, 0 -14px #8945f6, 0 -21px #cc8af8;
+}
+
+footer>p {
+  color: #a9a9a9;
+}
+
+footer a {
+  color: #eb57f7;
+}
+
+footer a:hover {
+  color: #cc8af8;
+}
+
+#footer-quote {
+  text-align: center;
+  font-weight: 700;
+}
+
+#footer-right-side {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  color: #a9a9a9;
+}
+
+/*******************************************************/
+/********PAGE SPECIFIC STYLES:**************************/
+
+/***********index.html***************/
+h1 {
+  margin: .75% auto 0 auto;
+}
+
+h2 {
+  margin-bottom: 1%;
+}
+
+#header-title {
+  height: 14vh;
+  width: auto;
+}
+
+#header-subtitle {
+  height: 7vh;
+  width: auto;
+}
+
+
+/**********aboutInkBus.html*********/
+
+#about-page-link {
+  color: #cc8af8;
+}
+
+#about-page-link:hover {
+  color: #eb57f7;
+}
+
+#information-container {
+  margin: 25px 0;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+#information-container>div {
+  flex: 0 0 77%;
+}
+
+#information-container>a {
+  flex: 0 0 20%;
+}
+
+.info-flex-item {
+  border: 5px solid var(--grape);
+  border-radius: 14px;
+  padding: 0 0 20px 0;
+  margin: 1.5em;
+  min-height: 400px;
+  min-width: 400px;
+}
+
+.about-inkbus-image {
+  background-image: url("https://i.ibb.co/sPrvR67/about-Markoon.webp");
+  background-size: cover;
+  transition: .3s;
+}
+
+.about-inkbus-image::after {
+  transform: translateX(-50%);
+}
+
+.about-inkbus-image:hover {
+  transform-origin: center center;
+}
+
+.about-inkbus-copy {
+  display: block;
+  overflow-wrap: break-word;
+}
+
+.about-inkbus-copy>h3 {
+  padding-bottom: 2%;
+}
+
+.about-inkbus-copy>p {
+  overflow-wrap: break-word;
+}
+
+/*****************mobile.html********************/
+#inkbus-mobile-header-image {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  justify-content: center;
+  gap: 3%;
+  width: 100%;
+  height: 25vh;
+  position: fixed;
+  top: 0;
+  background-image: url('https://i.ibb.co/Pg29h09/Mobile-Header.webp');
+  background-position-x: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 7px #cc8af8, 0 14px #8945f6, 0 21px #cc8af8;
+}
+
+#mobile-nav {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: "btn1 btn2 btn3 btn4 btn5";
+  column-gap: 2rem;
+  width: 100%;
+  padding-top: 10vh;
+}
+
+
+
+/************************************************/
+/********MEDIA QUERIES: UNIVERSAL STYLES*********/
+@media screen and (max-width: 768px) {
+  .page-wrapper {
+    height: calc(100vh - 10px);
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  #main-nav-btn1 {
+    margin: 0 0 4% 0;
+  }
+
+  #main-nav-btn2 {
+    margin: 0 4% 0 0;
+  }
+
+  footer {
+    position: relative;
+  }
+}

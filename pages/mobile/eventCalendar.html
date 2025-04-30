@@ -9,6 +9,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../../assets/styles/reset.css">
   <link rel="stylesheet" href="../../assets/styles/main.css">
+  <!--<link href="https://assets.juicer.io/embed.css" media="all" rel="stylesheet" type="text/css" />-->
+
   <link rel="apple-touch-icon" sizes="180x180" href="../../assets/images/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/favicons/favicon-16x16.png">
@@ -23,56 +25,43 @@
     <header class="inkbus-mobile-header-image" id="mobile-calendar-header-nosticky">
     </header>
   </a>
-  <main class="information-container" id="mobile-about-height-calc">
-    <section class="mobile-about-float">
-      <div class="mobile-about-image-container">
-        <a target="#" href="http://www.dugallery.com/">
-          <img class="mobile-about-img"
-            src="https://res.cloudinary.com/diyrbemqw/image/upload/v1681081098/inkbus-mobile/inkbus-mobile-about/aboutMarkoon_odwive.webp"
-            width="400px" height="auto">
-        </a>
-      </div>
-      <section class="mobile-about-info">
-        <h3>WEST COAST RACCOON MAKES GOOD</h3>
-        <p>Meet Markoon Dugally. Born and raised in Los Angeles, he has a background in art,
-          architecture and custom vehicle building. Not surprising that his 18+ years tattooing, mixed with his tool
-          belt of
-          other skills led him to become the leader in mobile and vehicular tattoo studios. His relocation to Portland
-          in
-          2018 fueled his fire to create something special and weird for a place with such shared adjectives.</p>
-        </br>
-        <p>“When I set my mind to do a project, I go all in. People say I think outside the box, but
-          to me, I dont know why we would want the box in the first place.” says Markoon. He gets that knickname from
-          the
-          raccoon-like ways he goes about building things. Recycled materials, upcycling and found objects are the
-          foundation
-          of most of his work. Tight budgets and intense time constraints are how he works best to make fun and
-          sustainable
-          creations. You can see more of his personal work, custom motorcycles and odd art at <a
-            href="http://www.dugallery.com/">www.dugallery.com</a>
-        </p>
-      </section>
+  <main class="information-container" id="mobile-calender-height-calc">
+    <section class="mobile-calendar-title-box">
+      <h1 class="mobile-calendar-title">OH, THE PLACES WE'LL GO...</h1>
+      <h2 class="mobile-calendar-subtitle">Flash Board 2023, INKBUS Mobile Event Calendar, and Instagram Feed Below</h2>
     </section>
-    <nav class="mobile-about-galleries-nav">
+    <section class="flex-box mobile-calendar-flash-box">
 
-      <a href="aboutMobile-CustomWork.html">
-        <img
-          src="https://res.cloudinary.com/diyrbemqw/image/upload/c_scale,e_improve,h_500,q_auto:good,w_500/v1683313505/inkbus-mobile/inkbus-mobile-about/CustomWrkBtn_xptkac.webp">
-      </a>
-      <a href="aboutMobile-EventFlash.html">
-        <img
-          src="https://res.cloudinary.com/diyrbemqw/image/upload/c_scale,e_improve,h_500,q_auto:good,w_500/v1683313505/inkbus-mobile/inkbus-mobile-about/EventFlashBtn_nfkn2t.webp">
-      </a>
+      <section class="flex-box mobile-calendar-flash-aside">
 
-    </nav>
+
+        <input type="image" id="flash-board"
+          src="https://res.cloudinary.com/diyrbemqw/image/upload/c_scale,e_improve,h_700,q_auto:good,w_363/v1683096280/inkbus-mobile/inkbus-mobile-calendar/inkbusFlashBoard_23_umsrfo.webp"
+          onclick="document.getElementById('flash-board').requestFullscreen()">
+
+
+      </section>
+
+      <section class="flex-box mobile-calendar-float">
+
+        <div>
+          <iframe
+            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%239E69AF&ctz=America%2FLos_Angeles&showPrint=0&showTabs=0&showCalendars=0&src=MmQzMDQwNmY0Nzk0OWFiYTUxY2JjODNiMzk5MDg1M2E5MTI4OGQ3NjA5MWYyYTM5ZDFiOTg1YTUyMWEzOGIyN0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23B39DDB">
+          </iframe>
+        </div>
+      </section>
+
+    </section>
     <section class="mobile-calendar-insta">
       <!--<ul class="juicer-feed" data-feed-id="inkbustattoo" data-columns="5" data-per="12"></ul>-->
       <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank"
           class="crt-logo crt-tag">Powered by Curator.io</a></div>
     </section>
+
     <a class="back-to-top" href="#top">Back to Top
     </a>
   </main>
+
   <footer>
     <section class="footer-left-side">
       <p>&copyINKBUS TATTOO 2023</p>
@@ -88,6 +77,7 @@
 
     </section>
   </footer>
+
   <script type="text/javascript">
     /* curator-feed-default-feed-layout */
     (function () {
@@ -96,7 +86,11 @@
       e = d.getElementsByTagName(s)[0]; e.parentNode.insertBefore(i, e);
     })();
   </script>
-
 </body>
 
 </html>
+<!--<img class="working-on-it"
+      src="https://res.cloudinary.com/diyrbemqw/image/upload/v1681259396/WorkingOnIt_idn9hb.png"
+      alt="We're Working On It! sign on pages that are not yet ready" width="350px" height="auto">
+    <section class="flex-box mobile-calendar-insta-box"></section>
+    -->

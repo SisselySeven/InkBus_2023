@@ -12,8 +12,6 @@
   --magenta: rgb(235, 87, 247);
   --lavender: rgb(204, 138, 248);
   --aluminum: rgb(169, 169, 169);
-  --lt-lavender: rgb(220, 190, 255);
-  --dk-lavender: rgb(50, 0, 100);
   --white: #fff;
   --black: #000;
 }
@@ -45,11 +43,6 @@ img {
 .working-on-it {
   width: auto;
   height: 100%;
-}
-.mothership-flyer {
-  width: auto;
-  height: 100%;
-  display: block;
 }
 
 /*Made to hold single images for flex control*/
@@ -308,12 +301,7 @@ h2 {
 
 #island-artists-height-calc {
   width: auto;
-  flex-direction: column;
-}
-
-#mothership-height-calc {
-  width: auto;
-  height: auto;
+  height: 50vh;
 }
 
 /* Set the width of the image container */
@@ -435,7 +423,7 @@ h2 {
   margin: 0 auto;
   flex-direction: column;
   justify-content: normal;
-  padding-left: 10%;
+  padding-left: 10%
 }
 
 .mobile-about-galleries-nav a {
@@ -454,8 +442,7 @@ h2 {
 }
 
 /*****aboutMobile-EventFlash and Mobile-CustomWork*********/
-.mobile-about-galleries {
-}
+.mobile-about-galleries {}
 
 .gallery {
   display: flex;
@@ -678,19 +665,22 @@ h2 {
   border-radius: 14px;
 }
 
-.innerP-gallery {
-}
+.innerP-gallery {}
 
-/*******************************************************************/
-/****************INKBUS Mothership and associated pages*******************/
-/*******************************************************************/
-
-.mothership-background {
-  background: linear-gradient(to bottom, #020104, #6032c8);
+/************************************************/
+/********island.html and Assoc Pages*********/
+/************************************************/
+.island-background {
+  background: linear-gradient(to bottom, #fff, #9538ff);
   background-repeat: no-repeat;
 }
 
-.inkbus-temp-mom-header-image {
+#island-market-background {
+  background-image: linear-gradient(to top, #9538ff, #fff, #9538ff);
+  background-repeat: repeat-y;
+}
+
+.inkbus-island-header-image {
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
@@ -700,78 +690,260 @@ h2 {
   height: 25vh;
   position: sticky;
   top: 0;
-  background-image: url("https://res.cloudinary.com/diyrbemqw/image/upload/v1707801438/inkbus-mothership/inkbusMainHeaderTemp_xbq08z.webp");
+  background-image: url("https://res.cloudinary.com/diyrbemqw/image/upload/v1681081728/inkbus-island/inkbus-island-main/islandHeader_fzmdri.webp");
   background-position-x: center;
   background-position-y: top;
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: 0 7px #cc8af8, 0 14px #8945f6, 0 21px #cc8af8;
+  box-shadow: 0 7px #8945f6, 0 14px #cc8af8, 0 21px #8945f6;
   z-index: 1;
 }
 
-.inkbus-temp-mom-header-image:hover {
-  filter: brightness(200%);
+.inkbus-island-header-image:hover {
+  filter: brightness(125%);
 }
 
-#mothership-flyer-container {
+/*Nav Btns for island.html*/
+.island-nav-btn {
+  height: 40vh;
+  width: auto;
+  transition: transform 0.5s ease-in-out;
+  border: 5px solid var(--grape);
+  border-radius: 14px;
+  margin: 0 10px;
+}
+
+.island-nav-btn:hover {
+  transform: scale(1.1);
+}
+
+/****************nightMarket.html*****************/
+
+.island-market-banner-title {
+  flex: 100%;
+  min-height: 4rem;
+  border: 5px solid var(--magenta);
+  border-radius: 14px;
+  margin: 5% 2% 0 2%;
+  background: var(--grape);
+}
+
+/**********************nightMarket.html****************/
+
+/*special header for gallery pages to scroll header*/
+#island-market-header {
   position: relative;
 }
 
-#mothership-contact-link {
-  position: absolute;
-  left: 50%;
-  bottom: .75vh;
-  transform: translate(-50%, -50%);
-  color: var(--lt-lavender);
+.island-market-banner-title h3 {
+  font-size: 2.25rem;
 }
-#mothership-contact-link:hover {
+
+.island-market-info-aside {
+  flex-direction: column;
+  flex: 1 0 20%;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: auto 2%;
+}
+
+#island-market-alignment {
+  align-items: flex-start;
+  height: auto;
+}
+
+.island-market-info-box {
+  max-width: 88%;
+  justify-content: center;
+}
+
+.island-market-info-aside h6 {
+  font-size: 2em;
+  text-align: center;
+}
+
+.google-map {
+  position: relative;
+}
+
+.google-map iframe {
+  margin: 5% auto;
+}
+
+.island-market-info-main {
+
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto 2%;
+}
+
+.island-market-info {
+  align-items: center;
+  flex-wrap: wrap;
+  flex: 1 0 66%;
+  max-width: 700px;
+  border: 5px solid var(--grape);
+  border-radius: 14px;
+  margin: 0 3%;
+  padding: 3% 4% 2% 4%;
+}
+
+.island-market-info p {
+  text-align: center;
+  border-radius: 14px;
+  background-color: var(--magenta);
+  padding: 2%;
+  margin-bottom: 3%;
+}
+
+.island-market-title {
+  color: var(--white);
+  font-size: 3rem;
+  text-align: center;
+}
+
+.island-market-subtitle {
+  font-size: smaller;
+}
+
+.island-market-info-subsection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.island-market-info-subsection p {
+  display: block
+}
+
+.island-market-info-subtitles {
+  font-size: larger;
+  color: var(--black);
+  flex: 1 0 30%;
+  white-space: nowrap;
+  /*flex-direction: column;*/
+}
+
+
+.island-market-info-subsection p {
+  font-size: smaller;
+  margin: 2%;
+}
+
+.island-market-info-subsection ul {
+  padding-left: 5%;
+}
+
+
+
+.island-market-info-subsection a {
   color: var(--magenta);
 }
 
-#mothership-images-container {
+.island-market-info-subsection a:hover {
+  color: var(--grape);
+}
+
+.island-market-media-btns {
+  display: flex;
+  flex-wrap: wrap;
+  color: var(--white);
+  border: 5px solid var(--magenta);
+  border-radius: 50px;
+  background-color: var(--grape);
+  padding: 2%;
+  margin: 2%;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  transition: transform 0.5s ease-in-out;
+  flex: 1 0 30%;
+  white-space: nowrap;
+}
+
+.island-market-media-btns:hover {
+  transform: scale(1.05);
+  color: var(--grape);
+  border: 5px solid var(--magenta);
+  background-color: var(--lavender);
+}
+
+.island-market-media-btns img {
+  filter: opacity(0.5) drop-shadow(0 0 var(--lavender));
+}
+
+.island-market-info-form-links a {
+  text-align: center;
+  color: var(--white);
+  font-size: smaller;
+}
+
+.island-market-info-form-links a:hover {
+  color: var(--grape);
+}
+
+.island-market-gallery-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 3% auto;
+}
+
+.island-market-gallery-box::after {
+  content: "";
+  flex-basis: 200px;
+}
+
+.island-market-gallery-box picture {
+  flex: 0 1 200px;
   position: relative;
 }
 
-/* Base styles for the container */
-#mothership-images-container {
-  position: relative;
-  width: 100%;
-  margin: 0 auto;
-  padding: 1rem;
-}
-
-/* Grid layout for desktop */
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns */
-  grid-template-rows: repeat(2, auto); /* 2 rows */
-  gap: 1rem;
-  width: 100%;
-}
-
-/* Image styles */
-.grid-item {
-  width: 100%;
-}
-
-.grid-image {
-  width: 100%;
-  height: auto;
+.island-market-gallery-box picture img {
   object-fit: cover;
-  display: block;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border: 5px solid var(--magenta);
+  border-radius: 14px;
 }
 
-/* Mobile layout - vertical stack */
-@media (max-width: 768px) {
-  .image-grid {
-    display: grid;
-    grid-template-columns: 1fr; /* Single column */
-    gap: 0.75rem; /* Smaller gap on mobile */
-  }
-  
-  .grid-item {
-    margin-bottom: 0.5rem; /* Additional space between items */
-  }
+/*****************aboutIsland.html********************/
+.island-about-image-container {
+  float: left;
+  margin-right: 2%;
+  padding-top: 2rem;
+}
+
+.island-about-img {
+  border: 5px solid var(--grape);
+  border-radius: 14px;
+  transition: transform 0.5s ease-in-out;
+  height: 45vh;
+  width: auto;
+}
+
+.island-about-img:hover {
+  transform: scale(1.05);
+}
+
+.island-about-info {
+  color: var(--white);
+}
+
+.island-about-info p a {
+  color: var(--grape);
+}
+
+.island-about-info p a:hover {
+  color: var(--magenta);
+}
+
+.island-info-asterix {
+  font-size: smaller;
 }
 
 /************************************************/
@@ -841,8 +1013,7 @@ h2 {
     flex-direction: column;
   }
 
-  .footer-nav {
-  }
+  .footer-nav {}
 
   .footer-quote {
     display: none;
@@ -889,7 +1060,7 @@ h2 {
   /****Mobile.html and assoc pages*******/
   /*************************************/
 
-  /*.information-container is shared by aboutMobile.html, contactMobile.html, servicesMobile.html, and mothershp.html*/
+  /*.information-container is shared by aboutMobile.html, contactMobile.html, servicesMobile.html*/
   .information-container {
     height: auto;
   }
@@ -1024,14 +1195,59 @@ h2 {
     text-align: center;
   }
 
-   /*Stylings relating to mothership.html*/
-  .inkbus-temp-mom-header-image {
+  /***************************************/
+  /****Island.html and assoc pages*******/
+  /*************************************/
+
+  .inkbus-island-header-image {
     height: 15vh;
     margin-bottom: 10%;
   }
-  #mothership-contact-link {
-    bottom: 1.5vh;
-    text-wrap: nowrap;
-    font-size: 2.5vh;
+
+  /**Stylings relating to island.html**/
+  .island-nav-btn {
+    margin: auto;
+    height: 29vh;
+    margin: auto auto 2% auto;
+  }
+
+  .island-nav-btn:hover {
+    transform: initial;
+    filter: brightness(150%);
+  }
+
+  /**Stylings relating to aboutIsland.html**/
+  #island-about-height-calc {
+    height: auto;
+  }
+
+  .island-about-image-container {
+    float: none;
+    padding-top: auto;
+  }
+
+  #island-artists-height-calc {
+    height: 55vh;
+  }
+
+  /**Stylings relating to nightMarket.html**/
+  .island-market-info-aside {
+    margin: 0 auto;
+  }
+
+  .island-market-title {
+    font-size: x-large;
+  }
+
+  .island-market-info-subtitles a {
+    color: var(--white);
+  }
+
+  .island-market-info-form-links a {
+    color: var(--white);
+  }
+
+  .island-market-gallery-box picture {
+    flex: 0 1 155px;
   }
 }

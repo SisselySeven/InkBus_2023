@@ -1,0 +1,47 @@
+03/25/23 Main index working in larger viewport siaes working perf. Inkbus About having issues with main area blowout. About to try configuring that <main> the same as <main> in index.html. Mobile view still needs help.
+
+03/25/23 stackoverload question:
+Issue: a \<main\> section that pushes up behind the \<header\> section on smaller veiwport sizes.
+
+Building a fairly simple multi-page website, a \<body\> wrapper set to flex, with three flex items, \<header\>, \<main\>, \<footer\>,  and flex-direction: column. These are meant to be global elements that will carry the styling for all pages.  
+  
+The index.html page is working with two images of the same size contained in a css grid. In every direction, down to screen width 768px (I have not finished the mobile media queries yet), the images respond the way I would expect -- across all major browsers.
+
+The aboutInkBus.html page does not. In an effort to standardize the process, I have made the two pages as alike as possible in their html and css design. However, the about page's two items in main -- an image and information copy -- are of different  sizes, which I suspect is part of the issue.
+
+Here is the link to my [GitHub Repository](https://github.com/SevenRooT/InkBus2023). The pages in question are:
+
+- [index.html](https://github.com/SevenRooT/InkBus2023/blob/main/index.html) 
+- [aboutInkBus.html](https://github.com/SevenRooT/InkBus2023/blob/main/pages/main/aboutInkBus.html) 
+- [main.css](https://github.com/SevenRooT/InkBus2023/blob/main/assets/styles/main.css) 
+
+I have attempted a wide variety of fixes: clearing all styles from the \<main\> section, switching to flexbox, overflow, display: block, collapsing margins and borders... nothing stops the \<main\> section from pushing behind the \<header\> section as the screen size shrinks proportionally for smaller laptop viewports. nothing on the page is position: absolute.
+
+Also: when changing the \<header\> position from fixed to relative, the \<main\> section just pops to the front of the \<header\> instead of behind.
+
+I have also tried a variety of margins and paddings, but they have other implications at larger screen sizes. All I really want is for the \<main\> div to respect the boundaries of the \<header\>.
+
+Notes:
+- I am also using a [reset.css](https://github.com/SevenRooT/InkBus2023/blob/main/assets/styles/reset.css) file
+- Still new-ish to GitHub, and my pages would not render correctly in their publisher. Sorry.
+- If you are viewing the code live, I added the following snippet for debugging:
+```
+* {
+  outline: 1px solid red;
+}
+```
+
+03/29/23
+Saving index1.html and main.css as new version. Persistant Issue: responzive resizing of button image
+
+03/30/23
+Saving main.css2 -- changes to .nav-container and addition of media querries
+
+03/31/23
+It's all working as expected!!!! Saved index2.html and main3.css *********These are the template for all navagational pages***********
+
+04/02/23 
+Improvements and globalization on all aspects, plus mobile.html is working too! Saving index3.html, main4.css, and mobile1.html
+
+04/04/23
+introduces aboutInkbus.html, aboutMobile.html, main5.css, and index4.html
